@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Ubuntu:wght@300;400;500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto','ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+:root
+{
+    --background-color-dark: #353535;
+    --color-white: #fff;
+}
+html
+{
+    background-color: var(--background-color-dark);
+}
+
+/* inicio header */
+header
+{
+    width: 100%;
+}
+.cabecalho .menu-nav
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+    align-items: center;
+}
+.cabecalho .menu-nav a
+{
+    color: var(--color-white);
+    font-size: 13px;
+    margin: 0 10px;
+}
+.cabecalho .menu-nav  img
+{
+    width: 1.2rem;
+    margin: 0 .7rem;
+}
+.cabecalho .menu-nav #icon-perfil
+{
+    width: 1.9rem;
+    height: 1.8rem;
+    border-radius: 100%;
+}
+/* fim header */
+
+/* inicio main */
+main
+{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* logo do google */
+main figure img
+{
+    width: 300px;
+    margin-bottom: 8vh;
+}
+/* campo de pesquisa */
+main .input-search
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 600px;
+    max-width: 600px;
+    height: 2.5rem;
+    border-radius: 50px;
+    background-color: var(--color-white);
+    margin-bottom: 2rem;
+}
+main .input-search:hover{
+    outline: 2px solid rgba(0, 0, 0, 0.199);
+}
+main .input-search .fa-magnifying-glass{
+    width: 15px;
+}
+main .input-search input
+{
+    width: 33rem;
+    height: 2rem;
+    outline: 0;
+    border: none;
+    font-size: 17px;
+}
+main .input-search #mic-icon-google
+{
+    width: 13px;
+}
+
+.add-atalho
+{
+    width: 8rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-atalho:hover
+{
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 5px;
+}
+.button-mais
+{
+    background: #2a2a2a;
+    border-radius: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.button-mais img
+{
+    width: 15px;
+    position: relative;
+    top: 2px;
+}
+.atalho-title
+{
+    color: white;
+    font-size: 10pt;
+}
+
+footer .btn-footer
+{
+    width: 11rem;
+    position: absolute;
+    left: 73rem;
+    top: 39rem;
+
+    padding: 6px;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    color: #448dec;
+}
+/* fim main */
